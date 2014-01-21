@@ -15,9 +15,17 @@ class puppet-elasticsearch-package-repos {
         gpgcheck => 1,
         gpgkey => 'http://packages.elasticsearch.org/GPG-KEY-elasticsearch'
       }
-      yumrepo { 'logstashrepo':
+      yumrepo { 'logstashrepo-1.2':
         baseurl => 'http://packages.elasticsearch.org/logstash/1.2/centos/',
-        descr => 'The logstash.net yum package repository',
+        descr => 'The logstash.net yum package 1.2.x repository',
+        enabled => 1,
+        enablegroups => 1,
+        gpgcheck => 1,
+        gpgkey => 'http://packages.elasticsearch.org/GPG-KEY-elasticsearch'
+      }
+      yumrepo { 'logstashrepo-1.3':
+        baseurl => 'http://packages.elasticsearch.org/logstash/1.3/centos/',
+        descr => 'The logstash.net yum package 1.3.x repository',
         enabled => 1,
         enablegroups => 1,
         gpgcheck => 1,
