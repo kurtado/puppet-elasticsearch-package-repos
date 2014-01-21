@@ -1,8 +1,8 @@
-# Class: elasticsearch-package-repos
+# Class: puppet-elasticsearch-package-repos
 #
 # Configure Elasticsearch package repos via puppet
 #
-class elasticsearch-package-repos {
+class puppet-elasticsearch-package-repos {
   case $operatingsystem {
     debian, ubuntu: {
     }
